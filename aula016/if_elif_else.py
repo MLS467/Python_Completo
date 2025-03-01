@@ -1,8 +1,7 @@
 # if  /    elif  / else
 # se / se não se/ se não
 
-
-
+val = 1
 
 while True:
     entrada = input("Digite entrar ou sair do sistema! ")
