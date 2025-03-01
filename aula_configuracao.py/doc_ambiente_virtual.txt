@@ -1,0 +1,10 @@
+Como ativar um ambiente virtual?
+
+Criar o ambiente virtual:
+python -m venv meu_ambiente
+
+Ativar o ambiente virtual:
+Windows (cmd ou PowerShell)
+.\venv\Scripts\activate
+
+
