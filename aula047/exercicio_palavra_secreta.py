@@ -17,7 +17,7 @@ usuário.
 
 import os
 
-palavra_oculta = "Testando".lower()
+palavra_oculta = "batata".lower()
 
 palavra_secreta = '*' * len(palavra_oculta)
 tentativas = 0
