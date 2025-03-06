@@ -22,15 +22,32 @@ lista = [
     {'nome': 'Aline', 'sobrenome': 'Souza'},
 ]
 
+# lista = [1,2,22,77,8,7,9]
+# lista.sort(reverse=True)
+
+
+# nova_lista = sorted(lista)
+
+# print(lista)
+
+
+# print(nova_lista)
+
+# def ordenador(valor):
+#     return valor['sobrenome']
+
+# lista.sort(key=ordenador)
+
+# lista.sort(key=lambda item: item['nome'])
 
 def exibir(lista):
-    for item in lista:
-        print(item)
+    for i in lista:
+        print(i)
     print()
 
+lista_por_nome = sorted(lista, key=lambda item:item['nome'])
+lista_por_sobrenome = sorted(lista, key=lambda item:item['sobrenome'])
 
-l1 = sorted(lista, key=lambda item: item['nome'])
-l2 = sorted(lista, key=lambda item: item['sobrenome'])
 
-exibir(l1)
-exibir(l2)
+exibir(lista_por_nome)
+exibir(lista_por_sobrenome)
