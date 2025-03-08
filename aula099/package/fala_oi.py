@@ -1,2 +1,2 @@
-def soma(x,y):
-    return sum([y,x])
+def fala_oi():
+    print('oi')

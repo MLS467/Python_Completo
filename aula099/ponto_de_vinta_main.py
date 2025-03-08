@@ -1,5 +1,7 @@
-from package.modulo import valores_somador,soma
+from package import fala_oi,fala_ola
 
 
-print(valores_somador)
-print(soma(7,8))
+fala_ola()
+fala_oi()
+
+

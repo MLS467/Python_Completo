@@ -1,3 +1,5 @@
-from package.fala_oi import soma
+from package.fala_oi import fala_oi
 
-valores_somador = soma(4,5)
+def fala_ola():
+    print("ola")
+

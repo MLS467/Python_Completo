@@ -11,7 +11,7 @@
 import sys
 
 import aula097_m as teste5
-from teste import teste
+from aula101.estudo_clousure import teste
 from teste.teste import chamou
 
 
