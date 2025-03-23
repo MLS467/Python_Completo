@@ -1,0 +1,6 @@
+class MaiorZeroError(Exception):
+    ...
+
+
+class ValorInvalidoError(Exception):
+    ...
