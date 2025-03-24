@@ -25,7 +25,7 @@ cliente = Cliente(nome,idade, c1)
 
 banco = Banco(BANCOS[int(banco_escolhido) - 1], cliente)
 
-def ver_saldo(conta):
+def ver_saldo(conta): 
     print(conta.saldo)
 
 def limpa_terminal():
@@ -51,7 +51,7 @@ try:
             cliente.conta.depositar(float(valor_depositar))
 
         elif acao == '3':
-            limpa_terminal()
+            limpa_terminal ()
             print(banco)
 
         elif acao == '4':
