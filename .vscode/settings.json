@@ -4,16 +4,16 @@
     "editor.hover.enabled": true,
     "workbench.startupEditor": "none",
     "explorer.compactFolders": false,
-    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontSize": 16,
     "editor.rulers": [
         80,
         120
     ],
     "workbench.colorTheme": "Omni",
     "workbench.iconTheme": "material-icon-theme",
-    "code-runner.executorMap": {
-        "python": "clear ; python -u"
-    },
+    // "code-runner.executorMap": {
+    //     "python": "clear ; python -u"
+    // },
     "code-runner.runInTerminal": true,
     "code-runner.ignoreSelection": true,
     "editor.fontFamily": "jetBrains mono, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
@@ -24,26 +24,19 @@
         "editor.insertSpaces": true,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.fixAll": "always",
-            "source.fixAll.unusedImports": "always",
-            "source.organizeImports": "always"
+            "source.fixAll": "explicit",
+            "source.fixAll.unusedImports": "explicit",
+            "source.organizeImports": "explicit"
         }
     },
     "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
     "python.formatting.autopep8Args": [
         "--indent-size=4",
         "--max-line-length=80"
     ],
-    "python.linting.flake8Args": [],
-    "python.defaultInterpreterPath": "ambiente_virtual/Scripts/python.exe",
-    "python.linting.flake8Path": "C:\\Users\\lucia\\Documents\\curso_python\\venv\\Scripts\\flake8.exe",
-    "python.linting.mypyPath": "C:\\Users\\lucia\\Documents\\curso_python\\venv\\Scripts\\mypy.exe",
-    "python.linting.flake8Enabled": true,
-    "python.linting.mypyEnabled": true,
-    "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
     "python.analysis.diagnosticSeverityOverrides": {},
-    "python.analysis.typeCheckingMode": "basic",
-    "cSpell.enabled": false,
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.typeCheckingMode": "basic"
 }
