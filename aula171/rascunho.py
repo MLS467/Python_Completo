@@ -9,4 +9,4 @@ for root, dirs, arquivo in os.walk(caminho):
         print('subpastas -> ', pastas)
     for arq in arquivo:
         print('arquivo -> ', arq)
-        os.unlink(os.path.join(root, arq))
+        # os.unlink(os.path.join(root, arq))

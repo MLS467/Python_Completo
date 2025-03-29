@@ -9,7 +9,7 @@
         80,
         120
     ],
-    "workbench.colorTheme": "Omni",
+    "workbench.colorTheme": "Omni Dracula Theme Contrast",
     "workbench.iconTheme": "material-icon-theme",
     // "code-runner.executorMap": {
     //     "python": "clear ; python -u"
