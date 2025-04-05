@@ -1,50 +1,39 @@
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 import os
-import smtplib
-from string import Template
-import dotenv
 import pathlib
-
-# carrega variáveis de ambiente
-dotenv.load_dotenv()
-
-# Caminho do arquivo html
-CAMINHO_HTML = pathlib.Path(__file__).parent / "email.html"
+import zipfile
 
 
-# dados do remetente
-nome = "Maissão"
-assunto = "Assunto do email"
-email = os.getenv("FROM_EMAIL", "")
-senha = os.getenv("APP_PASSWORD", "")
-
-# configuraçães SMTP
-smtp_gmail = os.getenv("SMTP_GOOGLE")
-smtp_porta = 587
-smtp_username = os.getenv("FROM_EMAIL", "")
-smtp_password = senha
-
-# mensagem de texto
-with open(CAMINHO_HTML, "r") as arquivo:
-    texto = arquivo.read()
-    template = Template(texto)
-    texto_email = template.substitute(nome=nome)
-
-# Transformar nossa mensagem em MIMEMultipart
-mime_multipart = MIMEMultipart()
-mime_multipart["from"] = email
-mime_multipart["to"] = smtp_username
-mime_multipart["subject"] = assunto
-
-corpo_email = MIMEText(texto_email, "html", "utf-8")
-mime_multipart.attach(corpo_email)
+# cria uma pasta com arquivos para simular
+def criar_pasta(qtd: int, path: pathlib.Path):
+    for i in range(1, qtd + 1):
+        texto = f"text{i}.txt"
+        with open(os.path.join(path, texto), "w", encoding="utf-8") as arquivo:
+            arquivo.write(texto)
 
 
-# Envia o e-mail
-with smtplib.SMTP(smtp_gmail, smtp_porta) as server:
-    server.ehlo()
-    server.starttls()
-    server.login(smtp_username, smtp_password)
-    server.send_message(mime_multipart)
-    print("E-mail enviado com  sucesso!")
+# compactar pasta com o caminho da pasta e o caminho da pasta .zip
+def compacta_pasta(old_path: pathlib.Path, new_path_zip: pathlib.Path):
+    with zipfile.ZipFile(new_path_zip, "w") as zip:
+        for root, dirs, files in os.walk(old_path):
+            for file in files:
+                zip.write(os.path.join(root, file), file)
+
+
+# ler arquivos das pastas compactada
+def ler_pasta_compacta(path: pathlib.Path):
+    with zipfile.ZipFile(path, "r") as arquivos:
+        arquivos_sorted = sorted(arquivos.namelist())
+        for arq in arquivos_sorted:
+            print(arq)
+
+
+# caminhos para exercitar
+CAMINHO_ROOT = pathlib.Path(__file__).absolute().parent
+CAMINHO_PASTA_DIR = CAMINHO_ROOT / "TESTE_ZIP"
+CAMINHO_PASTA_ZIP = CAMINHO_ROOT / "PASTA.zip"
+CAMINHO_PASTA_DIR.mkdir(exist_ok=True)
+
+# chamada das funções
+# criar_pasta(10, CAMINHO_PASTA_DIR)
+# compacta_pasta(CAMINHO_PASTA_DIR, CAMINHO_PASTA_ZIP)
+ler_pasta_compacta(CAMINHO_PASTA_ZIP)
