@@ -1,0 +1,14 @@
+import sqlite3
+import pathlib
+
+ROOT_DIR = pathlib.Path(__file__).parent
+DB_NAME = "db.sqlite3"
+DB_PATH = ROOT_DIR / DB_NAME
+
+connection = sqlite3.connect(DB_PATH)
+cursor = connection.cursor()
+
+# SQL
+
+cursor.close()
+connection.close()
