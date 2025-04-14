@@ -26,12 +26,12 @@ numero_parcelas = len(data_parcelas)
 valor_parcela = valor_total / numero_parcelas
 
 for data in data_parcelas:
-    print(data.strftime('%d/%m/%Y'), f'R$ {valor_parcela:,.2f}')
+    print(data.strftime("%d/%m/%Y"), f"R$ {valor_parcela:,.2f}")
 
 print()
 print(
-    f'Você pegou R$ {valor_total:,.2f} para pagar '
-    f'em {delta_anos.years} anos '
-    f'({numero_parcelas} meses) em parcelas de '
-    f'R$ {valor_parcela:,.2f}.'
+    f"Você pegou R$ {valor_total:,.2f} para pagar "
+    f"em {delta_anos.years} anos "
+    f"({numero_parcelas} meses) em parcelas de "
+    f"R$ {valor_parcela:,.2f}."
 )

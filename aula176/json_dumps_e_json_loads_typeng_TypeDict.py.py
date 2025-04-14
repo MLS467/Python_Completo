@@ -9,6 +9,7 @@
 # False         false
 # None          null
 import json
+
 # from pprint import pprint
 from typing import TypedDict
 
@@ -23,7 +24,7 @@ class Movie(TypedDict):
     budget: None | float
 
 
-string_json = '''
+string_json = """
 {
   "title": "O Senhor dos Anéis: A Sociedade do Anel",
   "original_title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -33,7 +34,7 @@ string_json = '''
   "characters": ["Frodo", "Sam", "Gandalf", "Legolas", "Boromir"],
   "budget": null
 }
-'''
+"""
 filme: Movie = json.loads(string_json)
 # pprint(filme, width=40)
 # print(filme['title'])

@@ -41,13 +41,13 @@ usuarios = [
     {
         "nome": "Tatiane",
         "idade": 26,
-    }
+    },
 ]
 
 
-CAMINHO_PASTA = pathlib.Path(__file__).parent.resolve() / 'usuarios.csv'
+CAMINHO_PASTA = pathlib.Path(__file__).parent.resolve() / "usuarios.csv"
 
-with open(CAMINHO_PASTA, 'w', encoding='utf-8') as arquivo:
+with open(CAMINHO_PASTA, "w", encoding="utf-8") as arquivo:
     resultado = usuarios[0].keys()
     escritor = csv.writer(arquivo)
 

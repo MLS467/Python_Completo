@@ -1,7 +1,7 @@
 import os
 
 # C:\Users\lucia\Desktop\teste
-caminho = os.path.join('C:\\Users\\lucia', 'Desktop', 'teste', 'arquivo.txt')
+caminho = os.path.join("C:\\Users\\lucia", "Desktop", "teste", "arquivo.txt")
 
 
 # print(caminho)
@@ -16,7 +16,7 @@ nome_arq, extensao_arq = os.path.splitext(arquivo)  # Separa nome e extensão
 existe = os.path.exists(caminho)  # testa se existe ou não
 
 # print(existe)
-absoluto = os.path.abspath('.')  # mostra o caminho com path absoluto
+absoluto = os.path.abspath(".")  # mostra o caminho com path absoluto
 
 # print(absoluto)
 

@@ -16,7 +16,7 @@
 # operação de entrada/saída (I/O) com arquivos em si.
 import os
 
-caminho = os.path.join('Desktop', 'curso', 'arquivo.txt')
+caminho = os.path.join("Desktop", "curso", "arquivo.txt")
 # print(caminho)
 diretorio, arquivo = os.path.split(caminho)
 nome_arquivo, extensao_arquivo = os.path.splitext(arquivo)

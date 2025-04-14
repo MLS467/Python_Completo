@@ -1,9 +1,9 @@
 import os
 import shutil
 
-HOME = os.path.expanduser('~')
-CAMINHO_ORIGINAL = os.path.join(HOME, 'Desktop', 'TESTE')
-NOVA_PASTA = os.path.join(HOME, 'Desktop', 'NOVA_PASTA2')
+HOME = os.path.expanduser("~")
+CAMINHO_ORIGINAL = os.path.join(HOME, "Desktop", "TESTE")
+NOVA_PASTA = os.path.join(HOME, "Desktop", "NOVA_PASTA2")
 
 # os.makedirs(NOVA_PASTA, exist_ok=True)
 # os.unlink(NOVA_PASTA)
@@ -12,4 +12,4 @@ NOVA_PASTA = os.path.join(HOME, 'Desktop', 'NOVA_PASTA2')
 
 # shutil.copytree(CAMINHO_ORIGINAL, NOVA_PASTA)
 
-shutil.move(NOVA_PASTA+'BATATA BATATA', NOVA_PASTA + ' BATATA')
+shutil.move(NOVA_PASTA + "BATATA BATATA", NOVA_PASTA + " BATATA")

@@ -4,7 +4,7 @@
 # caminho = r'C:\\Users\\luizotavio\\Desktop\\EXEMPLO'
 import os
 
-caminho = os.path.join('/Users', 'luizotavio', 'Desktop', 'EXEMPLO')
+caminho = os.path.join("/Users", "luizotavio", "Desktop", "EXEMPLO")
 
 for pasta in os.listdir(caminho):
     caminho_completo_pasta = os.path.join(caminho, pasta)
@@ -14,4 +14,4 @@ for pasta in os.listdir(caminho):
         continue
 
     for imagem in os.listdir(caminho_completo_pasta):
-        print('  ', imagem)
+        print("  ", imagem)

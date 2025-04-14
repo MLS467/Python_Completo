@@ -22,13 +22,13 @@
 # print(round(r_uniform, 2))
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # random.shuffle(numbers) # Shuffle the list in place
-# print(numbers) 
+# print(numbers)
 
-# escolhido = random.choice(numbers) # Choose a random element from the list 
-# escolhido = random.choices(numbers, k=2)  # Choose 2 random elements from the 
+# escolhido = random.choice(numbers) # Choose a random element from the list
+# escolhido = random.choices(numbers, k=2)  # Choose 2 random elements from the
 # print(escolhido)  # Choose 2 random elements from the list with replacement
 # # list with replacement
 
-# escolhido = random.sample(numbers, k=2)  # Choose 2 random elements from 
+# escolhido = random.sample(numbers, k=2)  # Choose 2 random elements from
 # print(escolhido)  # Choose 2 random elements from
 # the list without replacement

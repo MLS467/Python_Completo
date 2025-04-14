@@ -1,5 +1,5 @@
 import os
 
-os.system('cls')
+os.system("cls")
 
-print('ok')
+print("ok")

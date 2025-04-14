@@ -2,11 +2,11 @@ import os
 import shutil
 
 
-HOME = os.path.expanduser('~')
-DESKTOP = os.path.join(HOME, 'Desktop')
+HOME = os.path.expanduser("~")
+DESKTOP = os.path.join(HOME, "Desktop")
 
-CAMINHO_ORIGINAL = os.path.join(DESKTOP, 'TESTE')
-NOVA_PASTA = os.path.join(DESKTOP, 'NOVA_PASTA')
+CAMINHO_ORIGINAL = os.path.join(DESKTOP, "TESTE")
+NOVA_PASTA = os.path.join(DESKTOP, "NOVA_PASTA")
 
 os.makedirs(NOVA_PASTA, exist_ok=True)
 

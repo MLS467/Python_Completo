@@ -1,12 +1,13 @@
 import os
+
 # C:\Users\lucia\Desktop
-caminho = caminho = os.path.join('C:\\Users', 'lucia', 'Desktop', 'teste')
+caminho = caminho = os.path.join("C:\\Users", "lucia", "Desktop", "teste")
 
 for root, dirs, arquivo in os.walk(caminho):
-    print('raiz -> ', root)
+    print("raiz -> ", root)
 
     for pastas in dirs:
-        print('subpastas -> ', pastas)
+        print("subpastas -> ", pastas)
     for arq in arquivo:
-        print('arquivo -> ', arq)
+        print("arquivo -> ", arq)
         # os.unlink(os.path.join(root, arq))

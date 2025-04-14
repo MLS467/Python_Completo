@@ -1,4 +1,5 @@
 import pathlib
+
 # import os
 import shutil
 
@@ -25,13 +26,13 @@ caminho_arquivo = pathlib.Path(__file__)
 # print(caminho_novo_arq.read_text())
 # caminho_novo_arq.unlink()
 
-nova_pasta = caminho_projeto / 'batata'
+nova_pasta = caminho_projeto / "batata"
 nova_pasta.mkdir(exist_ok=True)
-sub_pasta = nova_pasta / 'subpasta'
+sub_pasta = nova_pasta / "subpasta"
 sub_pasta.mkdir(exist_ok=True)
 
-mais_arquivo = sub_pasta / 'text.txt'
+mais_arquivo = sub_pasta / "text.txt"
 mais_arquivo.touch()
-mais_arquivo.write_text('Hey Bro')
+mais_arquivo.write_text("Hey Bro")
 
-# shutil.rmtree(nova_pasta) 
+# shutil.rmtree(nova_pasta)

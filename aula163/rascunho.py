@@ -9,7 +9,7 @@ from dateutil.relativedelta import relativedelta
 # # print(diferenca.days / 365)
 
 # mais_dez = timedelta(days=10)
- 
+
 # print(data_nascimento + mais_dez)
 
 
@@ -17,8 +17,8 @@ from dateutil.relativedelta import relativedelta
 # print('relative', data_nascimento + relativedelta(seconds=60))
 
 formato = "%Y-%m-%d %H:%M:%S"
-data_nasc_m = datetime.strptime('1995-05-24 11:30:00', formato)
-data_nasc_l = datetime.strptime('1992-05-8 9:00:00', formato)
+data_nasc_m = datetime.strptime("1995-05-24 11:30:00", formato)
+data_nasc_l = datetime.strptime("1992-05-8 9:00:00", formato)
 
 diferenca = relativedelta(data_nasc_m, data_nasc_l)
 
