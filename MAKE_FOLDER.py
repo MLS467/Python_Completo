@@ -33,7 +33,7 @@ class MakeFolder:
 # Função para criar estrutura completa da aula
 def new_folder_class(make_folder: MakeFolder) -> None:
     new_name_file = re.sub(
-        r"[-\s]+", "_", make_folder.name_file.strip().lower()
+        r"[-\s]+", "_", make_folder.name_file.strip().lower().replace(",", "")
     )
 
     # Caminhos principais
@@ -79,20 +79,28 @@ def get_data_folder() -> None:
     name_file = input("Digite o nome do arquivo principal da aula: ").strip()
     folder_name = input("Digite o nome da pasta: ").strip()
     path_temp = input("Criar rascunho.py? (S/N): ").strip().lower() == "s"
-    with_modules = (
-        input("Criar pasta de módulos (modules/)? (S/N): ").strip().lower()
-        == "s"
-    )
-    with_data = (
-        input("Criar pasta de dados (data/)? (S/N): ").strip().lower() == "s"
-    )
-    with_notes = (
-        input("Criar arquivo de notas (notes.md)? (S/N): ").strip().lower()
-        == "s"
-    )
-    with_tests = (
-        input("Criar pasta de testes (tests/)? (S/N): ").strip().lower() == "s"
-    )
+    make_struct = input("Criar Estrutura de pastas? S/N")
+    with_modules = False
+    with_data = False
+    with_notes = False
+    with_tests = False
+    if make_struct.strip().lower() == "s":
+        with_modules = (
+            input("Criar pasta de módulos (modules/)? (S/N): ").strip().lower()
+            == "s"
+        )
+        with_data = (
+            input("Criar pasta de dados (data/)? (S/N): ").strip().lower()
+            == "s"
+        )
+        with_notes = (
+            input("Criar arquivo de notas (notes.md)? (S/N): ").strip().lower()
+            == "s"
+        )
+        with_tests = (
+            input("Criar pasta de testes (tests/)? (S/N): ").strip().lower()
+            == "s"
+        )
 
     folder = MakeFolder(
         name_folder=folder_name,
