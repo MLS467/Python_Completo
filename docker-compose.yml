@@ -1,5 +1,7 @@
 services:
   mysql_knex:
+    env_file:
+      - .env
     container_name: mysql_knex
     hostname: mysql_knex
     image: mysql:5.7
@@ -14,8 +16,4 @@ services:
     ports:
       - 3306:3306
     environment:
-      MYSQL_ROOT_PASSWORD: senha
-      MYSQL_DATABASE: base_de_dados
-      MYSQL_USER: usuario
-      MYSQL_PASSWORD: senha
       TZ: America/Sao_Paulo

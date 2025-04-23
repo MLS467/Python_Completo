@@ -7,7 +7,7 @@
   "explorer.compactFolders": false,
   "terminal.integrated.fontSize": 16,
   "editor.rulers": [80, 120],
-  "workbench.colorTheme": "Nord Deep",
+  "workbench.colorTheme": "Hack The Box",
   "workbench.iconTheme": "material-icon-theme",
   "editor.fontFamily": "jetBrains mono, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "terminal.integrated.fontFamily": "",
@@ -21,6 +21,7 @@
     "*": false,
     "plaintext": false,
     "markdown": false,
-    "scminput": false
+    "scminput": false,
+    "python": true
   }
 }
