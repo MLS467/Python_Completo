@@ -1,0 +1,27 @@
+{
+  "window.zoomLevel": -1,
+  "editor.fontSize": 22,
+  "editor.hover.enabled": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.startupEditor": "none",
+  "explorer.compactFolders": false,
+  "terminal.integrated.fontSize": 16,
+  "editor.rulers": [80, 120],
+  "workbench.colorTheme": "Hack The Box",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "jetBrains mono, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
+  "terminal.integrated.fontFamily": "",
+  "python.languageServer": "Pylance",
+  "python.analysis.autoImportCompletions": true,
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.analysis.diagnosticSeverityOverrides": {},
+  "python.analysis.typeCheckingMode": "basic",
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "python": true
+  }
+}
