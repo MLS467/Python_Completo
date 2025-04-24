@@ -20,11 +20,26 @@ from django.http import HttpResponse
 from django.urls import path
 
 
-def Teste(request):
-    return HttpResponse("<h1>Hello World</h1>")
+def home(request):
+    return HttpResponse(
+        """
+        <h1> Hello World Home </h1>
+        <a href='bolado'>Bolado</a>
+        """
+    )
+
+
+def bolado(request):
+    return HttpResponse(
+        """
+        <h1>Hello World bolado</h1>
+        <a href='/'>Home</a>
+        """
+    )
 
 
 urlpatterns = [
+    path("", home),
     path("admin/", admin.site.urls),
-    path("blog/", Teste),
+    path("bolado/", bolado),
 ]

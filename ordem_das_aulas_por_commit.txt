@@ -3,3 +3,4 @@ aula_1 -> projeto_movido_para_a_pasta_do_repositório_do_curso
 aula_2 -> o_que_é_o_django?_(de_modo_muito_superficial)
 aula_3 -> conheça_os_arquivos_do_django_django_admin_e_manage
 aula_4 -> primeira_url_e_function_based_view_+_httprequest_e_httpresponse_+_status_codes
+aula_5 -> entenda_os_motivos_de_uma_view_receber_uma_request_e_retornar_uma_response
