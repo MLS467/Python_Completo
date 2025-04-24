@@ -1,1 +1,3 @@
+aula_0 -> iniciando projeto Django
 aula_1 -> projeto_movido_para_a_pasta_do_repositório_do_curso
+aula_2 -> o_que_é_o_django?_(de_modo_muito_superficial)
