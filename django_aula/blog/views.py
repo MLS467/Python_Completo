@@ -11,3 +11,12 @@ def blog(request):
         <a href='/'>Home</a>
         """
     )
+
+
+def exemple(request):
+    return HttpResponse(
+        """
+        <h1>exemple do App</h1>
+        <a href='/'>Home</a>
+        """
+    )

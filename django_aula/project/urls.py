@@ -18,31 +18,11 @@ Including another URLconf
 from django.contrib import admin
 
 # from django.http import HttpResponse
-from django.urls import path
-from home import views as home_views
-from blog import views as blog_views
-
-
-# def home(request):
-#     return HttpResponse(
-#         """
-#         <h1> Hello World Home </h1>
-#         <a href='bolado'>Bolado</a>
-#         """
-#     )
-
-
-# def blog(request):
-#     return HttpResponse(
-#         """
-#         <h1>Hello World bolado</h1>
-#         <a href='/'>Home</a>
-#         """
-#     )
+from django.urls import path, include
 
 
 urlpatterns = [
-    path("", home_views.home),
-    path("bolado/", blog_views.blog),
+    path("", include("home.urls")),
+    path("blog/", include("blog.urls")),
     path("admin/", admin.site.urls),
 ]

@@ -8,6 +8,6 @@ def home(request):
     return HttpResponse(
         """
         <h1> Home do App </h1>
-        <a href='bolado'>Bolado</a>
+        <a href='blog'>Blog</a>
         """
     )
