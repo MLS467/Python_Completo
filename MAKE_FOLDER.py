@@ -21,10 +21,7 @@ def new_folder_class(make_folder: str) -> None:
             lines = 1
 
         with open(PATH_NEW_FILE, "a+", encoding="utf-8") as file:
-            file.write(
-                f"aula_{lines} -> \
-                    {new_name_file}\n"
-            )
+            file.write(f"aula_{lines} -> {new_name_file}\n")
     except Exception as e:
         print(f"Erro ao criar o arquivo: {e}")
 
