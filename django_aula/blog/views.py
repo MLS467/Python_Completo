@@ -1,22 +1,10 @@
-from django.http import HttpResponse
-
-# from django.shortcuts import render
+from django.shortcuts import render
 
 
 # Create your views here.
 def blog(request):
-    return HttpResponse(
-        """
-        <h1>blog do App</h1>
-        <a href='/'>Home</a>
-        """
-    )
+    return render(request, "blog/home.html")
 
 
 def exemple(request):
-    return HttpResponse(
-        """
-        <h1>exemple do App</h1>
-        <a href='/'>Home</a>
-        """
-    )
+    return render(request, "blog/exemple.html")

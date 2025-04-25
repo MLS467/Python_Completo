@@ -17,6 +17,9 @@
   "python.testing.unittestEnabled": false,
   "python.analysis.diagnosticSeverityOverrides": {},
   "python.analysis.typeCheckingMode": "basic",
+  "files.associations": {
+    "*.html": "django-html"
+  },
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
