@@ -32,6 +32,6 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "python": false
+    "python": true
   }
 }

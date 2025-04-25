@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # apps do django
+    # aqui você pode adicionar os apps que você criou
     "home",
     "blog",
 ]
@@ -57,6 +59,8 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         # pode adicionar lugares para adicionar templates também
+        # fora da pasta templates, como por exemplo:
+        # "DIRS": [BASE_DIR / "base"],
         "DIRS": [BASE_DIR / "base"],
         "APP_DIRS": True,
         "OPTIONS": {
@@ -117,7 +121,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+# aqui você pode adicionar o caminho para os arquivos estáticos
+# STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_URL = "static/"
+STATICFILES_DIRS = [BASE_DIR / "base" / "global" / "static"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
