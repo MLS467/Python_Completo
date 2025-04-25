@@ -10,3 +10,4 @@ aula_8 -> renderizando_html_render_templates_installed_apps_e_templatedoesnotexi
 aula_9 -> configurando_templates_globais_com_dirs_+_extends_para_herança_de_templates
 aula_10 -> arquivos_parciais_e_include_para_separar_trechos_dos_templates_(partials)
 aula_11 -> arquivos_estáticos_(staticfiles)_static_url_staticfiles_dirs_e_load_static
+aula_12 -> usando_o_context_para_enviar_dados_para_dentro_dos_templates_do_django

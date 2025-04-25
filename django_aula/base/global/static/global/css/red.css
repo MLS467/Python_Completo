@@ -1,3 +1,5 @@
 body {
-  background-color: #f00;
+  background-color: #121212; /* Preto puxado pro grafite */
+  color: #e0e0e0; /* Cinza bem clarinho para o texto */
+  font-family: Arial, sans-serif;
 }
