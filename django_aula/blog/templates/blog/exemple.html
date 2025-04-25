@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exemple</title>
-  </head>
-  <body>
-    <h1>EXEMPLE 2</h1>
-  </body>
-</html>
+{% extends "global/base.html" %} 
+{% comment %} HERANÇA DA BASE {% endcomment %}
+
+{% comment %} BLOCO DE CÓDIGO HERDADO {% endcomment %}
+{% block text %}
+EXEMPLE
+{% endblock text %}
