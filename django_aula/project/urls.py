@@ -22,6 +22,8 @@ from django.urls import path, include
 
 
 urlpatterns = [
+    # include é uma função que permite incluir outros arquivos de urls
+    # assim aninhando as urls de cada app
     path("", include("home.urls")),
     path("blog/", include("blog.urls")),
     path("admin/", admin.site.urls),
