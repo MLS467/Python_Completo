@@ -7,3 +7,4 @@ aula_5 -> entenda_os_motivos_de_uma_view_receber_uma_request_e_retornar_uma_resp
 aula_6 -> criando_apps_com_manage.py_startapp_do_django
 aula_7 -> aninhando_urls_com_path_include_e_urls.py_dos_apps_do_django
 aula_8 -> renderizando_html_render_templates_installed_apps_e_templatedoesnotexist
+aula_9 -> configurando_templates_globais_com_dirs_+_extends_para_herança_de_templates
