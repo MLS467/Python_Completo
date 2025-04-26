@@ -13,3 +13,5 @@ aula_11 -> arquivos_estáticos_(staticfiles)_static_url_staticfiles_dirs_e_load_
 aula_12 -> usando_o_context_para_enviar_dados_para_dentro_dos_templates_do_django
 aula_13 -> trabalhando_com_urls_dinâmicas_em_urls.py_e_nos_templates_html_do_django
 aula_14 -> movendo_todos_os_estilos_de_css_para_global/css/style.css
+aula_15 -> criando_o_partial_postblock.html_e_usando_include
+aula_16 -> usando_block_para_criar_blocos_de_posts_e_home

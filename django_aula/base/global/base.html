@@ -9,11 +9,8 @@
     
     <br><br><br>
     <main class="post">
-      {% include "../partials/postblock.html" %}
-      {% include "../partials/postblock.html" %}
-      {% include "../partials/postblock.html" %}
-      {% include "../partials/postblock.html" %}
-      {% include "../partials/postblock.html" %}
+      {% block post %}{% endblock post %}
+      <h1>{% block home %}{% endblock home %}</h1>
     </main>
 
   </body>
