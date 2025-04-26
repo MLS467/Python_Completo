@@ -12,3 +12,4 @@ aula_10 -> arquivos_parciais_e_include_para_separar_trechos_dos_templates_(parti
 aula_11 -> arquivos_estáticos_(staticfiles)_static_url_staticfiles_dirs_e_load_static
 aula_12 -> usando_o_context_para_enviar_dados_para_dentro_dos_templates_do_django
 aula_13 -> trabalhando_com_urls_dinâmicas_em_urls.py_e_nos_templates_html_do_django
+aula_14 -> movendo_todos_os_estilos_de_css_para_global/css/style.css
