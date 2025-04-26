@@ -30,3 +30,49 @@ li a:hover {
   background-color: #f1c40f;
   color: #121212;
 }
+
+.post {
+  width: 100%;
+  background-color: #121212; /* fundo escuro */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.container {
+  background-color: #1e1e1e;
+  color: #fff;
+  width: 25%;
+  aspect-ratio: 1 / 1; /* quadrado */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #333;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.container_header {
+  margin-bottom: 0.5rem;
+}
+
+.container_box {
+  flex: 1;
+  overflow: auto;
+}
+
+/* Quando a tela for menor, faz as caixas empilharem e ficarem retangulares */
+@media (max-width: 800px) {
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    width: 90%;
+    aspect-ratio: 3 / 2; /* retângulo */
+  }
+}
