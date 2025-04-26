@@ -29,9 +29,14 @@ def blog(request):
 
 
 def exemple(request):
-    context_example = {
-        "title_aba": "Example",
-        "title": "Example",
-        "content": "Welcome to the Example page!",
+    context_exemple = {
+        "name": "EXEMPLE",
+        "title": "Exemple",
+        "content": "Welcome to the Exemple page!",
     }
-    return render(request, "blog/exemple.html", context=context_example)
+    return render(request, "blog/exemple.html", context=context_exemple)
+
+
+def post(request, id):
+    print(f"post --> {id}")
+    return render(request, "blog/exemple.html", context={"title": "Post", "id": id})

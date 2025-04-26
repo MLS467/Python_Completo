@@ -15,6 +15,7 @@ aula_13 -> trabalhando_com_urls_dinâmicas_em_urls.py_e_nos_templates_html_do_dj
 aula_14 -> movendo_todos_os_estilos_de_css_para_global/css/style.css
 aula_15 -> criando_o_partial_postblock.html_e_usando_include
 aula_16 -> usando_block_para_criar_blocos_de_posts_e_home
-aula_17 -> entendendo_o_seu_html_final_+_adicionando_css_aos_posts
+aula_17 -> entendendo_o_seu_html_final_+_adicionando_css_aos_posts entre commit 16 a 17
 aula_18 -> criando_os_dados_de_posts_(data.py)_e_usando_o_loop_for_no_template_django
 aula_19 -> usando_if_elif_e_else_dentro_do_template_html_do_django
+aula_20 -> criando_urls_dinâmicas_no_django_url_dispatcher_view_e_template 2025-04-26 02:58:24
