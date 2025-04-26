@@ -5,15 +5,25 @@ import requests
 
 
 # Create your views here.
-def blog(request):
 
-    result_request = requests.get("https://jsonplaceholder.typicode.com/posts")
+
+def blog(request):
+    try:
+        URL = "https://jsonplaceholder.typicode.com/posts"
+        result_request = requests.get(URL)
+        result = result_request.json()
+        msg = "dados carregados com sucesso!"
+    except requests.exceptions.RequestException as e:
+        msg = f"Erro ao carregar os dados {e}"
+        result = None
 
     context_blog = {
+        "name": "HOME BLOG",
         "title_aba": "Blog",
         "title": "Blog",
         "content": "Welcome to the blog page!",
-        "posts": result_request.json(),
+        "posts": result,
+        "msg": msg,
     }
     return render(request, "blog/home.html", context=context_blog)
 

@@ -4,13 +4,20 @@
     {% include "../partials/menu.html" %}
     
     <br><br><br>
-    <h1>{% block text %}Hello World{% endblock text%}</h1>
+
+    {% if name %}
+      <h1>{% block text %}Hello World{% endblock text%}</h1>
+    {% endif %}
+
+
     <p>{{description_text}}</p>
     
     <br><br><br>
+    
+    <h3>{{msg}}</h3>
+    
     <main class="post">
       {% block post %}{% endblock post %}
-      <h1>{% block home %}{% endblock home %}</h1>
     </main>
 
   </body>

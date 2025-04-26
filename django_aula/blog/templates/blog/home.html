@@ -2,9 +2,9 @@
 {% comment %} HERANÇA DA BASE {% endcomment %}
 
 {% comment %} BLOCO DE CÓDIGO HERDADO {% endcomment %}
-{% block text %}
-  HOME BLOG
-{% endblock text %}
+  {% block text %}
+    {{name}}
+  {% endblock text %}
 
 {% block post %}
   {% for i in posts %}
