@@ -2,7 +2,19 @@
 
   <body>
     {% include "../partials/menu.html" %}
+    
+    <br><br><br>
     <h1>{% block text %}Hello World{% endblock text%}</h1>
     <p>{{description_text}}</p>
+    
+    <br><br><br>
+    <main class="post">
+      {% include "../partials/postblock.html" %}
+      {% include "../partials/postblock.html" %}
+      {% include "../partials/postblock.html" %}
+      {% include "../partials/postblock.html" %}
+      {% include "../partials/postblock.html" %}
+    </main>
+
   </body>
 </html>
