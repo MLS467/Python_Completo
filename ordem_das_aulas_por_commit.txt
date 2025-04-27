@@ -23,3 +23,4 @@ aula_21 -> usando_a_mesma_url_de_forma_estática_e_dinâmica 2025-04-26 13:59:06
 aula_22 -> configurando_um_post_único_no_template_post.html_com_a_nova_view_e_css 2025-04-26 14:15:48
 aula_23 -> exibindo_o_erro_404_(página_não_encontrada)_com_django.http.http404_(not_found) 2025-04-26 22:06:47
 aula_24 -> estilizando_o_css_da_nav_de_menu 2025-04-26 22:47:25
+aula_25 -> básico_sobre_os_arquivos_estáticos_debug_e_allowed_hosts_(local_e_em_produção) 2025-04-26 23:04:30

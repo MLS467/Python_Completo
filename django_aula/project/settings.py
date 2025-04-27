@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+# DEVE USAR O PYTHON MANAGE.PY COLLECTSTATIC ANTES DE RODAR O SERVIDOR
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -23,9 +24,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-q!vw%9agru+aa2(i#pulvn#uk(e5sq=rxhe$*j@h53!$mh_c!*"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False  # Debug deve ser False em produção
 
-ALLOWED_HOSTS = []
+# permitindo o acesso apenas ao localhost
+
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -125,6 +129,9 @@ USE_TZ = True
 # STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_URL = "static/"
 STATICFILES_DIRS = [BASE_DIR / "base" / "global" / "static"]
+
+# aqui você pode adicionar o caminho para os arquivos de mídia
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
