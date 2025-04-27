@@ -22,3 +22,4 @@ aula_20 -> criando_urls_dinâmicas_no_django_url_dispatcher_view_e_template 2025
 aula_21 -> usando_a_mesma_url_de_forma_estática_e_dinâmica 2025-04-26 13:59:06
 aula_22 -> configurando_um_post_único_no_template_post.html_com_a_nova_view_e_css 2025-04-26 14:15:48
 aula_23 -> exibindo_o_erro_404_(página_não_encontrada)_com_django.http.http404_(not_found) 2025-04-26 22:06:47
+aula_24 -> estilizando_o_css_da_nav_de_menu 2025-04-26 22:47:25

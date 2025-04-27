@@ -53,13 +53,24 @@ li a:hover {
   padding: 1rem;
   box-sizing: border-box;
   transition: all 0.3s ease;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .container_header {
   margin-bottom: 0.5rem;
+  color: #f1c40f;
+}
+
+.container_header:hover {
+  color: rgb(37, 123, 203);
+  text-decoration: underline;
 }
 
 .container_box {
+  color: white;
   flex: 1;
   overflow: auto;
 }
