@@ -44,7 +44,11 @@ def post(request: HttpRequest, post_id: int) -> HttpResponse:
 
         result_request = requests.get(URL)
         selected_post: Any = result_request.json()
-    except KeyError as e:
+
+        if not selected_post:
+            raise Http404(f"Post with id {post_id} not found.")
+
+    except Http404 as e:
         raise Http404(f"Post with id {post_id} not found. Error: {e}")
     except requests.exceptions.RequestException as e:
         raise Http404(f"Error fetching post with id {post_id}. Error: {e}")
