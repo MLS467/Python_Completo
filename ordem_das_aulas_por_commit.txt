@@ -20,3 +20,4 @@ aula_18 -> criando_os_dados_de_posts_(data.py)_e_usando_o_loop_for_no_template_d
 aula_19 -> usando_if_elif_e_else_dentro_do_template_html_do_django
 aula_20 -> criando_urls_dinâmicas_no_django_url_dispatcher_view_e_template 2025-04-26 02:58:24
 aula_21 -> usando_a_mesma_url_de_forma_estática_e_dinâmica 2025-04-26 13:59:06
+aula_22 -> configurando_um_post_único_no_template_post.html_com_a_nova_view_e_css 2025-04-26 14:15:48
