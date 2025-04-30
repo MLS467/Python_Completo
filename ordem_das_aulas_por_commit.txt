@@ -5,3 +5,4 @@ aula_3 -> criando_e_editando_a_senha_de_um_super_usuário_django 2025-04-27 18:5
 aula_4 -> sobre_base_de_dados_tabelas_e_documentação_do_django 2025-04-29 22:51:00
 aula_5 -> django_models_criando_seu_primeiro_model_makemigrations_e_migrate 2025-04-29 23:34:27
 aula_6 -> registrando_meu_model_na_área_administrativa_do_django_(admin.py_e_register) 2025-04-30 00:56:38
+aula_7 -> customizando_as_opções_admin.modeladmin_(área_administrativa_do_django) 2025-04-30 01:27:36
