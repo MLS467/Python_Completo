@@ -8,7 +8,7 @@
   "terminal.integrated.fontSize": 16,
   "editor.rulers": [80, 120],
   "workbench.colorTheme": "Hack The Box",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "pcode-icon-theme-dark-spesifik",
   "editor.fontFamily": "jetBrains mono, 'Dank Mono', 'Source Code Pro', 'Fira Code', Menlo, 'Inconsolata', 'Droid Sans Mono', 'DejaVu Sans Mono', 'Ubuntu Mono', 'Courier New', Courier, Monaco, monospace",
   "terminal.integrated.fontFamily": "",
   "python.languageServer": "Pylance",
