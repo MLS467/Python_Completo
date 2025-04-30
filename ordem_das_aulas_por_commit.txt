@@ -2,3 +2,5 @@ aula_0 -> iniciando_o_nosso_projeto_do_zero_(com_ambiente_virtual_e_django) 2025
 aula_1 -> criando_o_app_contact_no_django 2025-04-27 16:58:03
 aula_2 -> pasta_base_de_templates_e_arquivos_estáticos_(base_templates_base_static) 2025-04-27 18:05:36
 aula_3 -> criando_e_editando_a_senha_de_um_super_usuário_django 2025-04-27 18:51:39
+aula_4 -> sobre_base_de_dados_tabelas_e_documentação_do_django 2025-04-29 22:51:00
+aula_5 -> django_models_criando_seu_primeiro_model_makemigrations_e_migrate 2025-04-29 23:34:27
