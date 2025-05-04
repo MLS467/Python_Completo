@@ -8,3 +8,4 @@ aula_6 -> registrando_meu_model_na_área_administrativa_do_django_(admin.py_e_re
 aula_7 -> customizando_as_opções_admin.modeladmin_(área_administrativa_do_django) 2025-04-30 01:27:36
 aula_8 -> crud_usando_o_django_shell_interativo_e_o_model_contact 2025-04-30 13:06:11
 aula_9 -> criando_um_imagefield_e_configurando_media_url_e_media_root_no_settings.py 2025-05-03 17:23:13
+aula_10 -> foreignkey_criando_o_model_category_e_fazendo_a_ligação_com_chave_estrangeira 2025-05-04 14:58:06

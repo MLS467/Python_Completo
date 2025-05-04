@@ -1,9 +1,7 @@
 from django.utils import timezone
 from django.db import models
 
-
 # Create your models here.
-
 # id (primary key - automatico não preocupa)
 # first_name(string) string campo de texto limitado a 255 caracteres
 # last_name(string)
@@ -15,7 +13,13 @@ from django.db import models
 # show (boolean) se o contato deve ser exibido ou não
 # owner (foreign key) usuário dono do contato
 # picture (image) imagem do contato
-""
+
+
+class Category(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self) -> str:
+        return f"{self.name}"
 
 
 class Contact(models.Model):
@@ -26,7 +30,15 @@ class Contact(models.Model):
     created_date = models.DateField(default=timezone.now)
     description = models.TextField(blank=True)
     show = models.BooleanField(default=True)
+    # picture é um campo de imagem,
+    # o upload_to é o caminho onde a imagem será salva
     picture = models.ImageField(blank=True, upload_to="pictures/%Y/%m/")
+    # category é uma chave estrangeira para a tabela Category,
+    # o on_delete=models.SET_NULL significa que se a categoria for deletada,
+    # o campo category do contato será setado como null
+    category = models.ForeignKey(
+        Category, blank=True, on_delete=models.SET_NULL, null=True
+    )
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
