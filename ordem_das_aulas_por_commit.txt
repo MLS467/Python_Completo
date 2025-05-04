@@ -11,3 +11,4 @@ aula_9 -> criando_um_imagefield_e_configurando_media_url_e_media_root_no_setting
 aula_10 -> foreignkey_criando_o_model_category_e_fazendo_a_ligação_com_chave_estrangeira 2025-05-04 14:58:06
 aula_11 -> model_meta_options_verbose_name_e_verbose_name_plural_no_django 2025-05-04 16:04:43
 aula_12 -> criando_o_campo_owner_usando_o_model_user_do_django 2025-05-04 16:36:02
+aula_13 -> script_python_que_gera_dados_aleatórios_no_django_com_o_faker 2025-05-04 18:20:20
