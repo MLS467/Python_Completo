@@ -1,3 +1,4 @@
+from tabnanny import verbose
 from django.utils import timezone
 from django.db import models
 
@@ -16,6 +17,14 @@ from django.db import models
 
 
 class Category(models.Model):
+
+    # Meta é uma classe interna que define opções adicionais para o modelo
+    # verbose_name é o nome do modelo no singular
+    # verbose_name_plural é o nome do modelo no plural
+    class Meta:
+        verbose_name = "Category"
+        verbose_name_plural = "Categories"
+
     name = models.CharField(max_length=50)
 
     def __str__(self) -> str:
