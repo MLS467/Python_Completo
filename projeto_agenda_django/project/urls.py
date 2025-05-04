@@ -16,10 +16,23 @@ Including another URLconf
 """
 
 from django.contrib import admin
+
+# importando o arquivo urls.py do app contact
 from contact import urls as contact_urls
+
+# importando a função include e path do django.urls
 from django.urls import include, path
+
+# importando a função static do django.conf.urls.static
+from django.conf.urls.static import static
+
+# importando o settings do django.conf
+from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include(contact_urls)),
 ]
+
+# adicionando o static ao urlpatterns
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

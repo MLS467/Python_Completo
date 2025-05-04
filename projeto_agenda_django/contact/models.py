@@ -15,6 +15,7 @@ from django.db import models
 # show (boolean) se o contato deve ser exibido ou não
 # owner (foreign key) usuário dono do contato
 # picture (image) imagem do contato
+""
 
 
 class Contact(models.Model):
@@ -24,6 +25,8 @@ class Contact(models.Model):
     email = models.EmailField(max_length=255)
     created_date = models.DateField(default=timezone.now)
     description = models.TextField(blank=True)
+    show = models.BooleanField(default=True)
+    picture = models.ImageField(blank=True, upload_to="pictures/%Y/%m/")
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
