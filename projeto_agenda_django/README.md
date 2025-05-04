@@ -66,3 +66,12 @@ contacts = Contact.objects.all().order_by('-id')
 # Retorna QuerySet[]
 contacts = Contact.objects.filter(**filters).order_by('-id')
 ```
+
+```python
+# importa o model user padrão do django
+from django.contrib.auth.models import User
+# cria um usuário comum nome de usuário e senha
+# não tem acesso ao admin
+User.objects.create_user(usuario="Bolsonaro", password=123)
+
+```

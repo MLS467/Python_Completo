@@ -1,6 +1,7 @@
 from tabnanny import verbose
 from django.utils import timezone
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 # id (primary key - automatico não preocupa)
@@ -48,6 +49,8 @@ class Contact(models.Model):
     category = models.ForeignKey(
         Category, blank=True, on_delete=models.SET_NULL, null=True
     )
+
+    owner = models.ForeignKey(User, blank=True, on_delete=models.SET_NULL, null=True)
 
     def __str__(self) -> str:
         return f"{self.first_name} {self.last_name}"
